@@ -1,0 +1,5 @@
+aws-cdk.core==2.116.1
+aws-cdk.aws_s3==2.116.1
+aws-cdk.aws_lambda==2.116.1
+aws-cdk.aws_apigateway==2.116.1
+constructs==3.3.165
