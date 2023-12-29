@@ -1,10 +1,12 @@
+import aws_cdk as cdk
+import aws_cdk.aws_s3 as s3
+import aws_cdk.aws_lambda as _lambda
+import aws_cdk.aws_apigateway as apigw
+
 from aws_cdk import (
     # Duration,
     Stack,
     # aws_sqs as sqs,
-    aws_s3 as s3,
-    aws_lambda as _lambda,
-    aws_apigateway as apigw,
 )
 from constructs import Construct
 
@@ -19,7 +21,7 @@ class Ezapp2Stack(Stack):
 
         # Create a new Lambda function
         self.lambda_function = _lambda.Function(
-            self,                                     # Parent   
+            self,                                    # Parent   
             "ezApp2Lambda",                          # The name of the lambda
             code=_lambda.Code.from_asset("lambda"),  # Specify the lambda directory,
             handler="handler.handler",               # the handler file and the handler function

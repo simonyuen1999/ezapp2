@@ -1,10 +1,13 @@
 # ezapp2
-ezapp2 with Python CDK and Lambda
+ezapp2 with Python CDK, Lambda, and API Gateway
 =======
 
 # Welcome to your CDK Python project!
 
-This is a blank project for CDK development with Python.
+This is a project for CDK development with Python.
+
+Note: 'cdk' command is node.js CLI program.  Make sure the current directory does not 
+have package.json file and node_modules directory.
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 

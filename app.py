@@ -1,4 +1,6 @@
-from aws_cdk_lib import core as cdk
+#!/usr/bin/env python3
+import os
+import aws_cdk as cdk
 from ezapp2.ezapp2_stack import Ezapp2Stack
 
 app = cdk.App()
